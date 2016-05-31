@@ -1,0 +1,111 @@
+<template name="assignroles">
+
+<!--wide layout-->
+		<div class="wide_layout relative">
+			
+			<!--breadcrumbs-->
+			{{> breadcrumb}}
+			
+			<!--content-->
+			<div class="page_content_offset">
+				<div class="container">
+					<div class="row clearfix">
+
+						<section class="col-lg-9 col-md-9 col-sm-9">
+							<h2 class="tt_uppercase color_dark m_bottom_25">Assigning Roles</h2>
+
+							<div class="row clearfix">
+								<div class="col-lg-12 col-md-12 col-sm-12 m_xs_bottom_30">
+
+									<h4 class="page-header">Add Users</h4>
+									<div class="panel panel-default">
+										  <div class="panel-body">
+
+										  	<form class="adminpannel">
+
+										  		<table class="table table-bordered">
+												    <thead>
+												      <tr>
+												        <th>Email Address</th>
+												        <th>Password</th>
+												        <th>Role</th>
+												        <th></th>
+												      </tr>
+												    </thead>
+												    <tbody>
+
+												      <tr>
+												        <td>
+												        	<input type="email" id="email" name="email" placeholder="email" class="full_width r_corners">
+												        </td>
+
+												        <td>
+												        	<input type="password" name="password" id="password" class="r_corners full_width" placeholder="password" required>
+												        </td>
+
+												        <td>
+									                    	<select class="selectpicker selectuserid">
+															  <option value="admin" >admin</option>
+															  <option value="warehouse" >warehouse</option>
+															  <option value="regular" >regular</option>
+															  <option value="bloguser" >bloguser</option>
+															</select>
+														</td>
+
+														<td>
+															<button class="button_type_4 tr_all_hover r_corners f_left bg_scheme_color color_light f_mxs_none m_mxs_bottom_15 assignrole">Assign Role</button>
+														</td>
+
+												      </tr>
+												    </tbody>
+											    </table>
+
+											</form>
+										  </div>
+									</div>
+
+								</div>
+							</div>
+						</section>
+
+						<section class="col-lg-9 col-md-9 col-sm-9">
+							<table class="table">
+							    <thead>
+							      <tr>
+							        <th>Email Address</th>
+							        <th>Role</th>
+							        <th>Action</th>
+							      </tr>
+							    </thead>
+							    <tbody>
+
+							    	{{#each controlledusers}}
+							      <tr>
+							        <td>
+							        	{{emails.[0].address}}
+							        </td>
+
+							        <td>
+				                    	{{roles[0]}}
+									</td>
+
+									<td>
+										<button class="button_type_4 bg_light_color_2 r_corners mw_0 tr_all_hover color_dark">Delete</button>
+									</td>
+							      </tr>
+
+							      {{/each}}
+							    </tbody>
+						    </table>
+						</section>
+
+
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+		
+
+</template>

@@ -1,0 +1,71 @@
+<template name="signupform">
+
+<div class="popup_wrap d_none" id="signup_popup">
+
+		<section class="popup r_corners shadow">
+
+			<!-- close -->
+			<button class="bg_tr color_dark tr_all_hover text_cs_hover close f_size_large"><i class="fa fa-times"></i></button>
+
+			<!-- Login Text field -->
+			<h3 class="m_bottom_20 color_dark">Sign Up</h3>
+
+			<!-- display flash messages -->
+			{{> flashMessages}}
+
+			<!-- Form -->
+			<form class="form-signup">
+
+				<ul>
+
+					<!-- Email -->
+					<li class="m_bottom_15">
+						<label for="email" class="m_bottom_5 d_inline_b">Email</label><br>
+						<input type="email" name="email" id="email" class="r_corners full_width" required>
+					</li>
+
+					<!-- password -->
+					<li class="m_bottom_25">
+						<label for="password" class="m_bottom_5 d_inline_b">Password</label><br>
+						<input type="password" name="password" id="password" class="r_corners full_width" required>
+					</li>
+
+					<!-- Confirm password -->
+					<li class="m_bottom_25">
+						<label for="password2" class="m_bottom_5 d_inline_b">Confirm Password</label><br>
+						<input type="password" name="password2" id="password2" class="r_corners full_width" required>
+					</li>
+
+
+					<!-- checkbox to remember? -->
+					<li class="m_bottom_15">
+						<input type="checkbox" class="d_none" id="checkbox_10"><label for="checkbox_10">Remember me</label>
+					</li>
+
+					<li class="clearfix m_bottom_30">
+
+						<!-- login Button -->
+						<button class="button_type_4 tr_all_hover r_corners f_left bg_scheme_color color_light f_mxs_none m_mxs_bottom_15">Create Account</button>
+
+
+					</li>
+
+				</ul>
+
+			</form>
+
+
+			<!-- New Customer -->
+			<footer class="bg_light_color_1 t_mxs_align_c">
+
+				<h3 class="color_dark d_inline_middle d_mxs_block m_mxs_bottom_15">Existing Customer?</h3>
+
+				<a href="#" role="button" class="tr_all_hover r_corners button_type_4 bg_dark_color bg_cs_hover color_light d_inline_middle m_mxs_left_0 exisingaccount" data-popup="#login_popup" >Login</a>
+
+			</footer>
+
+		</section>
+
+	</div>
+
+</template>

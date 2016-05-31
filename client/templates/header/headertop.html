@@ -1,0 +1,44 @@
+<template name="headertop">
+
+	<!--header top part-->
+	<section class="h_top_part">
+
+		<div class="container">
+
+			<div class="row clearfix">
+
+			<!-- disply flash messages -->
+			{{> flashMessages}}
+
+				<div class="col-lg-4 col-lg-offset-8 col-md-4 col-sm-4 ">
+					<ul class="d_inline_b horizontal_list clearfix f_size_small users_nav">
+						
+
+						{{#if currentUser}}
+						<li><a href="#" class="default_t_color logout-user"><i class="fa fa-user "></i> Logout</a></li>
+						<li><a href="{{pathFor 'dashboard'}}" class="default_t_color"><i class="fa fa-tachometer "></i> My Account</a></li>
+						{{else}}
+						<li><a href="#" class="default_t_color" data-popup="#login_popup"><i class="fa fa-user "></i> Login/Signup</a></li>
+						{{/if}}
+
+
+					  	{{#if isInRole 'superadmin'}}
+					    <li><a href="{{pathFor 'assignroles'}}" class="default_t_color" ><i class="fa fa-user "></i> Assign Roles</a></li>
+					    <li><a href="{{pathFor 'addproducts'}}" class="default_t_color" ><i class="fa fa-user "></i> Add Products</a></li>
+					  	{{/if}}
+
+
+						<li><a href="{{pathFor 'stores'}}" class="default_t_color"><i class="fa fa-map-marker"></i> Stores</a></li>
+						<li><a href="{{pathFor 'offers'}}" class="default_t_color"><i class="fa fa-tag" ></i> Offers</a></li>
+						<li><a href="{{pathFor 'help'}}" class="default_t_color"><i class="fa fa-question-circle" ></i> Help</a></li>
+
+					</ul>
+				</div>
+
+			</div>
+
+		</div>
+
+	</section>
+	
+</template>

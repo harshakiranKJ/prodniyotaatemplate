@@ -1,0 +1,53 @@
+<template name="home">
+
+		<!--boxed layout-->
+		<div class="wide_layout relative w_xs_auto">
+			
+			<!--content-->
+			<div class="page_content_offset">
+
+				<div class="container">
+
+					<div class="row clearfix">
+
+						<!-- Side Items -->
+						<aside class="col-lg-3 col-md-3 col-sm-3 m_xs_bottom_30">
+
+							<!--widgets-->
+							{{> categories}}
+
+							<!--compare products-->
+							{{> compareproducts}}
+
+							<!--wishlist-->
+							{{> wishlist}}
+
+							<!--Bestsellers-->
+							{{> bestsellers}}
+
+							<!--tags-->
+							{{> tags}}
+
+						</aside>
+
+						<!-- Products Display list -->
+						{{> productslist}}
+
+					</div>
+
+				</div>
+
+			</div>
+			
+		</div>
+		
+		
+		<!--login popup-->
+
+		{{> loginform}}
+		{{> signupform}}
+
+		{{> bringbacktop}}
+
+		
+</template>

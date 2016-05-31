@@ -1,0 +1,56 @@
+<template name="gateheader">
+
+	<div class="wide_layout relative w_xs_auto">
+
+		<header role="banner" class="type_5" >
+
+			<!--header top part-->
+			{{> gateheadertop}}
+
+			
+			<!--header bottom part-->
+			<section class="h_bot_part">
+
+				<div class="menu_wrap">
+
+					<div class="container">
+
+						<div class="clearfix row">
+
+							<div class="col-lg-2 t_md_align_c m_md_bottom_15">
+								<a href="{{pathFor 'home'}}" class="logo d_md_inline_b">
+									<img src="images/logo.png" class="img-responsive" alt="" style="margin-top:-25px">
+								</a>
+							</div>
+
+							<div class="col-lg-10 clearfix t_sm_align_c">
+
+								<div class="clearfix t_sm_align_l f_left f_sm_none relative s_form_wrap m_sm_bottom_15 p_xs_hr_0 m_xs_bottom_5">
+									<!--button for responsive menu-->
+									<button id="menu_button" class="r_corners centered_db d_none tr_all_hover d_xs_block m_xs_bottom_5">
+										<span class="centered_db r_corners"></span>
+										<span class="centered_db r_corners"></span>
+										<span class="centered_db r_corners"></span>
+									</button>
+
+									
+								</div>
+
+
+								<ul class="f_right horizontal_list d_sm_inline_b f_sm_none clearfix t_align_l site_settings">
+									
+									<a href="{{pathFor 'frontpage'}}" role="button" class="button_type_4 bg_scheme_color d_inline_middle r_corners tr_all_hover color_light">Welcome</a>
+
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+		</header>
+
+	</div>
+
+
+</template>

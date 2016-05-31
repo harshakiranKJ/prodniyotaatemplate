@@ -1,0 +1,71 @@
+<template name="filters">
+
+	<figure class="widget animate_ftr shadow r_corners wrapper">
+			<figcaption>
+				<h3 class="color_light">Filter</h3>
+			</figcaption>
+			<div class="widget_content">
+				<!--filter form-->
+				<form>
+					<!--checkboxes-->
+					<fieldset class="m_bottom_15">
+						<legend class="default_t_color f_size_large m_bottom_15 clearfix full_width relative">
+							<b class="f_left">Manufacturers</b>
+							<button type="button" class="f_size_medium f_right color_dark bg_tr tr_all_hover close_fieldset"><i class="fa fa-times lh_inherit"></i></button>
+						</legend>
+						<input type="checkbox" name="" id="checkbox_1" class="d_none"><label for="checkbox_1">Chanel</label><br>
+						<input type="checkbox" checked name="" id="checkbox_2" class="d_none"><label for="checkbox_2">Calvin Klein</label><br>
+						<input type="checkbox" name="" id="checkbox_3" class="d_none"><label for="checkbox_3">Prada</label><br>
+					</fieldset>
+					<!--price-->
+					<fieldset class="m_bottom_20">
+						<legend class="default_t_color f_size_large m_bottom_15 clearfix full_width relative">
+							<b class="f_left">Price</b>
+							<button type="button" class="f_size_medium f_right color_dark bg_tr tr_all_hover close_fieldset"><i class="fa fa-times lh_inherit"></i></button>
+						</legend>
+						<div id="price" class="m_bottom_10"></div>
+						<div class="clearfix range_values">
+							<input class="f_left first_limit" readonly name="" type="text" value="$0">
+							<input class="f_right last_limit t_align_r" readonly name="" type="text" value="$250">
+						</div>
+					</fieldset>
+					<!--size-->
+					<fieldset class="m_bottom_15">
+						<legend class="default_t_color f_size_large m_bottom_15 clearfix full_width relative">
+							<b class="f_left">Size</b>
+							<button type="button" class="f_size_medium f_right color_dark bg_tr tr_all_hover close_fieldset"><i class="fa fa-times lh_inherit"></i></button>
+						</legend>
+						<input type="radio" name="size" id="radio_1" class="d_none"><label for="radio_1">S</label><br>
+						<input type="radio" name="size" checked id="radio_2" class="d_none"><label for="radio_2">M</label><br>
+						<input type="radio" name="size" id="radio_3" class="d_none"><label for="radio_3">L</label><br>
+					</fieldset>
+					<!--color-->
+					<fieldset class="m_bottom_25 m_sm_bottom_20">
+						<legend class="default_t_color f_size_large m_bottom_15 clearfix full_width relative">
+							<b class="f_left">Color</b>
+							<button type="button" class="f_size_medium f_right color_dark bg_tr tr_all_hover close_fieldset"><i class="fa fa-times lh_inherit"></i></button>
+						</legend>
+						<ul class="horizontal_list clearfix">
+							<li class="m_right_5 m_sm_bottom_5"><button type="button" class="select_color red r_corners color_dark active"><i class="fa fa-check lh_inherit tr_all_hover"></i></button></li>
+							<li class="m_right_5 m_sm_bottom_5"><button type="button" class="select_color blue r_corners color_dark"><i class="fa fa-check lh_inherit tr_all_hover"></i></button></li>
+							<li class="m_right_5 m_sm_bottom_5"><button type="button" class="select_color green r_corners color_dark"><i class="fa fa-check lh_inherit tr_all_hover"></i></button></li>
+							<li class="m_right_5 m_sm_bottom_5"><button type="button" class="select_color grey r_corners color_dark"><i class="fa fa-check lh_inherit tr_all_hover"></i></button></li>
+							<li class="m_right_5 m_sm_bottom_5"><button type="button" class="select_color yellow r_corners color_dark"><i class="fa fa-check lh_inherit tr_all_hover"></i></button></li>
+						</ul>
+					</fieldset>
+					<fieldset class="m_bottom_25">
+						<legend class="default_t_color f_size_large m_bottom_15 clearfix full_width relative">
+							<b class="f_left">Weight</b>
+							<button type="button" class="f_size_medium f_right color_dark bg_tr tr_all_hover close_fieldset"><i class="fa fa-times lh_inherit"></i></button>
+						</legend>
+						<div class="clearfix">
+							<input type="text" name="" class="r_corners f_left type_2">
+							<input type="text" name="" class="r_corners f_left type_2 m_left_10">
+						</div>
+					</fieldset>
+					<button type="reset" class="color_dark bg_tr text_cs_hover tr_all_hover"><i class="fa fa-refresh lh_inherit m_right_10"></i>Reset</button>
+				</form>
+			</div>
+	</figure>
+
+</template>
